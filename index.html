@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>弹幕播放器 DanmuPlayer</title>
+<meta name="description" content="一个 iPhone 视频播放器：直接播放你 NAS 和手机里的片子，再配上弹幕。开发中，计划上架 App Store。">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="./">弹幕播放器</a>
+    <nav>
+      <a href="#features">功能</a>
+      <a href="#progress">进度</a>
+      <a href="privacy.html">隐私</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="pill">开发中 · 计划上架 App Store</p>
+    <h1>弹幕播放器</h1>
+    <p class="tagline">播放你自己的片子，配上弹幕。</p>
+    <p class="lead">像 Infuse 一样，直接播放 NAS 和手机里的视频。<br class="br-wide">再把弹幕对准你手里的这个版本。</p>
+    <div class="cta">
+      <a class="btn" href="#features">看看能做什么</a>
+      <a class="link" href="#progress">开发进度 ›</a>
+    </div>
+    <figure class="phone reveal">
+      <img src="assets/play.jpg" width="1600" height="736" alt="播放界面：画面上同时显示中英两条字幕，上方是滚动弹幕">
+    </figure>
+    <p class="note">截图来自开发中的版本，画面是测试图案，左上的数字是秒数，用来核对字幕和弹幕的时间。</p>
+  </section>
+
+  <section id="features" class="band">
+    <div class="split reveal">
+      <div class="text">
+        <h2>什么格式都能放。</h2>
+        <p>mkv、mp4 都行。4K HEVC 用 iPhone 的硬件解码，省电也不发烫。</p>
+        <ul class="facts">
+          <li>内封和外挂字幕：ASS 样式原样显示，SRT 也行</li>
+          <li>中文、英文两条字幕可以同时显示</li>
+          <li>字幕早了晚了能自己调，大小也能调</li>
+          <li>多条音轨随时切换</li>
+        </ul>
+      </div>
+      <figure class="phone small"><img src="assets/subtitles.jpg" width="1600" height="736" alt="字幕面板：列出中文、英文、中英双语三条字幕轨"></figure>
+    </div>
+  </section>
+
+  <section class="band gray">
+    <div class="split rev reveal">
+      <div class="text">
+        <h2>弹幕，对准你这一版。</h2>
+        <p>同一集在不同地方下载，片头长短往往不一样，弹幕就会整体错位。弹幕播放器会按台词把时间对上。</p>
+        <ul class="facts">
+          <li>通过弹弹play 自动匹配弹幕</li>
+          <li>也可以导入 B站格式的弹幕文件</li>
+          <li>滚动、顶部、底部三种弹幕，太挤的会自动丢掉</li>
+          <li>透明度、字号、显示区域、屏蔽词都能调</li>
+        </ul>
+      </div>
+      <figure class="phone small"><img src="assets/controls.jpg" width="1600" height="736" alt="控制条：倍速、字幕、音轨按钮，右上角是弹幕开关"></figure>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="grid reveal">
+      <div class="card">
+        <h3>倍速</h3>
+        <p>0.5 到 3 倍，快放时人声不变尖。</p>
+      </div>
+      <div class="card">
+        <h3>手势</h3>
+        <p>双击左右快退快进 10 秒，横划拖进度，竖划调亮度。</p>
+      </div>
+      <div class="card">
+        <h3>片源</h3>
+        <p>SMB、WebDAV、手机里的文件。以后加 Emby 和 Jellyfin。</p>
+      </div>
+      <div class="card">
+        <h3>只连你自己的设备</h3>
+        <p>不提供任何影视内容，也不经过我们的服务器。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="progress" class="band gray">
+    <div class="narrow reveal">
+      <h2>开发进度</h2>
+      <p class="sub">2026 年 11 月</p>
+      <ul class="progress">
+        <li class="done">播放内核：mpv + FFmpeg，硬件解码</li>
+        <li class="done">字幕：ASS / SRT、双字幕、调早晚和大小</li>
+        <li class="done">倍速和手势</li>
+        <li class="done">弹幕显示和设置</li>
+        <li>片源：SMB、WebDAV</li>
+        <li>媒体库：海报墙、记住看到哪、自动下一集</li>
+        <li>弹弹play 弹幕匹配，导入的弹幕自动对时间</li>
+        <li>上架 App Store（iPhone）</li>
+        <li>Apple TV 版</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="narrow center reveal">
+      <h2>有问题或建议？</h2>
+      <p class="lead">欢迎在 GitHub 上留言。</p>
+      <a class="btn" href="https://github.com/haotianz/danmuplayer/issues">去留言</a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <div>
+      <h4>弹幕播放器</h4>
+      <p>iPhone 视频播放器，开发中。</p>
+      <p lang="en">DanmuPlayer is an iPhone video player in development. It plays videos from your own NAS (SMB, WebDAV) and device, with danmaku (bullet comments) aligned to your copy of the video.</p>
+    </div>
+    <div>
+      <h4>开源</h4>
+      <p>播放功能基于 mpv、FFmpeg、libplacebo、libass、FreeType、HarfBuzz、FriBidi，都是从官方源码原样编译的，LGPL 的部分没有改动。字幕字体是 Noto Sans SC（SIL Open Font License）。</p>
+    </div>
+    <div>
+      <h4>链接</h4>
+      <p><a href="privacy.html">隐私政策</a></p>
+      <p><a href="https://github.com/haotianz/danmuplayer/issues">联系我们</a></p>
+    </div>
+  </div>
+  <p class="copy">© 2026 弹幕播放器</p>
+</footer>
+
+<script>
+  // 往下滚时轻轻淡入；系统设置了「减少动态效果」就不动
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      els.forEach(function (e) { e.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { rootMargin: '0px 0px -10% 0px' });
+    els.forEach(function (e) { io.observe(e); });
+  })();
+</script>
+</body>
+</html>
